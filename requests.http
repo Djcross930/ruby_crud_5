@@ -3,3 +3,14 @@ GET http://localhost:3000/teams
 ###
 
 GET http://localhost:3000/teams/3
+
+###
+
+POST http://localhost:3000/teams
+Content-Type: application/json
+
+{
+  "name": "Suns",
+  "wins": 60,
+  "loses": 20
+}
