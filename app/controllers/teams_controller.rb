@@ -27,6 +27,13 @@ class TeamsController < ApplicationController
     team.save
     render json: team.as_json
   end
+  
+  def destroy
+    team = Team.find_by(id: params[:id])
+    team.destroy
+    render json: {message: "Team removed"}
+  end
+
 
 
 
