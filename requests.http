@@ -14,3 +14,12 @@ Content-Type: application/json
   "wins": 60,
   "loses": 20
 }
+
+###
+
+PATCH http://localhost:3000/teams/1
+Content-Type: application/json
+
+{
+  "name": "The Chicago Bulls"
+}
